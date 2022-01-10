@@ -12,6 +12,12 @@ export default function Footer() {
         and{' '}
         <HeartIcon className='w-5 inline mb-1 stroke-sky-700 hover:stroke-red-800 hover:scale-125' />
       </p>
+      <a
+        className='text-sky-900 underline'
+        rel='stylesheet'
+        href='https://github.com/SGCifuentes/store'>
+        Github Repository
+      </a>
     </div>
   );
 }
