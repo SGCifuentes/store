@@ -6,6 +6,8 @@
 
 ## La mejor tienda para fans de videojuegos, series y entretenimiento geek.
 
+### Proyecto creado con React, React-Redux, Typescript y Tailwind CSS
+
 ---
 
 ### [DEMO](https://sgcgeekstore.netlify.app/)
