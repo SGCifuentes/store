@@ -1,16 +1,14 @@
-# Hulk Store
+# Geek Store
 
 ## Clona este repo
 
 ## Instala los paquetes requeridos
 
-# Geek Store
-
 ## La mejor tienda para fans de videojuegos, series y entretenimiento geek.
 
 ---
 
-### [DEMO](https://geekstore.netlify.app/)
+### [DEMO](https://sgcgeekstore.netlify.app/)
 
 Clona este repo
 
