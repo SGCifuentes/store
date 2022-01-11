@@ -13,6 +13,7 @@ export default function Detail() {
   const dispatch = useAppDispatch();
 
   const selectedProduct = products.find((product) => {
+    debugger;
     return product.id === id?.slice(1);
   });
 

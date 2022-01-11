@@ -6,12 +6,13 @@ import { useAppSelector } from '../store/hooks';
 export default function Header() {
   const [query, setQuery] = useState('');
   const [openSearch, setOpenSearch] = useState(false);
+  const navigate = useNavigate();
   const { products, cart } = useAppSelector((state) => state.store);
   const total =
     cart.length === 0
       ? 0
       : cart.map((product) => product.count).reduce((a, b) => a + b);
-  const navigate = useNavigate();
+
   return (
     <div className='bg-sky-900 sm:px-12 px-2 py-3 flex justify-between shadow-md rounded-b-lg shadow-slate-700'>
       <h1
@@ -31,7 +32,6 @@ export default function Header() {
           <input
             className='w-full bg-sky-50 h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none'
             placeholder='Buscar...'
-            onBlur={() => setQuery('')}
             value={query}
             onChange={(event) => setQuery(event.target.value)}
           />
@@ -56,6 +56,7 @@ export default function Header() {
               .map((product) => (
                 <li
                   onClick={() => {
+                    debugger;
                     setQuery('');
                     navigate(`/producto:${product.id}`);
                   }}
