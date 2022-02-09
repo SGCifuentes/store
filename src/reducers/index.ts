@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import useTemplateData from '../components/hooks/useTemplateData';
+import useTemplateData from '../hooks/useTemplateData';
 import { initialState } from '../models/State';
 
 export const storeSlice = createSlice({

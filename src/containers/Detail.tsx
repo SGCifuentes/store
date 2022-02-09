@@ -13,7 +13,6 @@ export default function Detail() {
   const dispatch = useAppDispatch();
 
   const selectedProduct = products.find((product) => {
-    debugger;
     return product.id === id?.slice(1);
   });
 
@@ -34,7 +33,7 @@ export default function Detail() {
       <div className='sm:px-12 px-2 py-10 max-w-full flex flex-col sm:flex-row gap-5 sm:gap-10 lg:mx-auto'>
         <div className='bg-sky-100 rounded-xl drop-shadow-xl md:mx-0 w-5/6 md:w-2/3 mx-auto aspect-square flex items-center'>
           <img
-            className='drop-shadow-xl mx-auto hover:scale-125 aspect-square h-2/3 '
+            className='drop-shadow-xl mx-auto aspect-square h-2/3 '
             src={selectedProduct.image}
             alt={selectedProduct.title}
           />

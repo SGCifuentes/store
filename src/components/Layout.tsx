@@ -8,7 +8,7 @@ type Props = {
 
 export default function Layout({ children }: Props) {
   return (
-    <div className='min-h-screen h-auto bg-sky-200 font-secondary overflow-x-hidden'>
+    <div className='min-h-screen h-auto bg-sky-50 dark:bg-gray-900 font-secondary overflow-x-hidden'>
       <Header />
       {children}
       <Footer />
